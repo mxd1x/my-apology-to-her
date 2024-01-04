@@ -1,0 +1,69 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#apology-container {
+    position: relative;
+    width: 100%;
+    max-width: 550px;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+#apology-container:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('apologize-437x230.jpg') center/cover;
+    filter: blur(10px);
+    z-index: -1;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 2, 3, 0.5);
+}
+
+#apology-content {
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 15px;
+    padding: 20px;
+}
+
+h1 {
+    color: #58a5d1;
+    font-family: cursive;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #0c4a74;
+    font-family: cursive;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 550px) {
+    #apology-container {
+        border-radius: 0; /* No border-radius for smaller screens */
+    }
+
+    #apology-content {
+        border-radius: 0;
+    }
+}
